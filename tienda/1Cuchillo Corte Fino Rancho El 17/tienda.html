@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cuchillo Corte Fino Rancho El 17 - Rancho NV</title>
+        <!-- CSS Encabezado -->
+        <link href="../encabezado.css" rel="stylesheet" type="text/css">
+        <!-- CSS Cuerpo -->
+        <link rel="stylesheet" href="../cuerpo.css">
+        <!-- CSS pie de pagina -->
+        <link href="../piepag.css" rel="stylesheet" type="text/css">
+        <!-- Icono -->
+        <link rel="icon" href="../../logos/nnsf.png" sizes="220x220">
+
+        <script src="https://kit.fontawesome.com/0ce6c751cb.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div align="center">
+            <!-- Encabezado -->
+            <header>
+                <!-- Logo -->
+                <div class="logo">
+                    <a onclick="location.reload()"><img src="../../logos/nnsf.png" width="" height="100"></a>
+                </div>
+
+                <!-- Menu -->
+                <nav>
+                    <a href="../../principal.html">Inicio</a>
+                    <a href="../../steaks.html">Steaks</a>
+                    <a href="../../BlackBrangus.html">Black Brangus</a>
+                    <a href="../../DryAged.html">Dry Aged</a>
+                    <a href="../../Complementos.html">Complementos</a>
+                    <a href="../../Contacto.html">Contacto</a>
+                </nav>
+
+                <!-- Buscador -->
+                <div class="search-box">
+                    <input type="text" placeholder="">
+                </div>
+
+                <!-- Imagen de usuario -->
+                <div class="user">
+                    <img src="../../logos/usuario.png" alt="usuario">
+                </div>
+            </header>
+        </div>
+
+        <!-- Cambiar el header al mover el scroll -->
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("abajo", window.scrollY>0);
+            });
+        </script>
+
+        <!-- Cuerpo -->
+        <main>
+            <div class="container-img">
+                <img src="../../img/Cuchillo1.png" alt="">
+            </div>
+            <div class="container-info-product">
+                <span class="container-name">Cuchillo Corte Fino Rancho El 17</span>
+                <div class="container-price">
+                    <span class="precio">$999.00 MXN</span>
+                    <div class="rating">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </div>
+                </div>
+                
+
+                <div class="container-details-product">
+                    <div class="form-group">
+                        <label for="colour">Kit</label>
+                        <select name="colour" id="colour">
+                            <option disabled selected value="">Escoje una opción</option>
+                            <option value="rojo">Cuchillo Corte Fino Rancho El 17</option>
+                            <option value="blanco">Cuchillo Corte Fino Rancho El 17 + Chorizo Argentino</option>
+                            <option value="beige">Cuchillo Corte Fino Rancho El 17 + Sal de Mar de Cortés</option>
+                        </select>
+                    </div>
+                    <button class="btn-clear">Limpiar</button>
+                </div>
+
+                <div class="container-add-cart">
+                    <div class="container-quantity">
+                        <input type="number" name="" id="" placeholder="0" value="1" min="1" class="input-quantity">
+                    </div>
+                    <button class="btn-add-to-cart">
+                        <i class="fa-solid fa-plus"></i>Añadir al Carrito
+                    </button>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="pie-pagina" id="contacto">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="../../logos/nnsf - copia.png" alt="Logo de SLee Dw">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>
+                        Rancho NV es una página web de venta de cortes finos que ofrece productos 
+                        de alta calidad y un servicio al cliente excepcional. Es ideal para aquellos 
+                        que buscan una experiencia culinaria única y satisfactoria.
+                    </p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                        <a href="https://twitter.com/?lang=es" class="fa fa-twitter"></a>
+                        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2021 <b>Rancho NV</b> - Todos los Derechos Reservados.</small>
+            </div>
+        </footer>
+    </body>
+</html>
