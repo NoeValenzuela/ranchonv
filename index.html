@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Rancho NV</title>
+            <!-- CSS Encabezado -->
+            <link href="Contacto/encabezado.css" rel="stylesheet" type="text/css">
+            <!-- CSS Cuerpo -->
+            <link href="Contacto/cuerpo.css" rel="stylesheet" type="text/css">
+            <!-- CSS pie de pagina -->
+            <link href="Contacto/piepag.css" rel="stylesheet" type="text/css">
+            <!-- Icono -->
+            <link rel="icon" href="logos/nnsf.png" sizes="220x220">
+
+            <script src="https://kit.fontawesome.com/0ce6c751cb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <br><br><br><br>
+        <div class="contact_form">
+            <div align="center">
+                <img src="logos/nw sf.png" width="auto" height="60px">
+            <h1>Inicar sesión</h1>
+            </div>
+                <SCRIPT  language=JavaScript> 
+                    function go(){
+                        if (document.form.password.value=='admin' && document.form.login.value=='admin'){ 
+                                document.form.submit(); 
+                        } 
+                        else{ 
+                            alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+                        } 
+                    } 
+                </SCRIPT> 
+                <FORM name=form action="principal.html">
+                    <input type="text" id="login" placeholder="Usuario" class="asd"><br>
+                    <input type="password" name="password" placeholder="Contraseña" class="asd" >
+                    <div align="center">
+                        <button onclick=go() type=button class="btn btn-light">Acceder</button>
+                    </div>
+                </FORM> 
+        </div>
+    </body>
+</html>
