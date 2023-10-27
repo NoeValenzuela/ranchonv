@@ -1,0 +1,90 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    min-height: 1600px;
+    background-size: cover;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    padding: 8px;
+    background-color: #793a3a00;
+    position: fixed;
+    z-index: 100;
+    left: 0%;
+    top: 0%;
+    transition: 0.7s;
+}
+
+/* Logo */
+.logo img {
+    display: flex;
+    height: 70px;
+    margin-right: 15px;
+}
+
+/* Menu */
+nav a {
+    display: inline-block;
+    margin: 10px 2px;
+    color: #a5a5a5;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+nav a:hover {
+    background-color: #000;
+    color: #fff;
+    width: auto;
+    height: auto;
+    border-radius: 30px;
+}
+
+/* Boton buscar */
+.search-box {
+    margin-left: 10px;
+    display: flex;
+    border-radius: 30px;
+    border: 2px solid #696969;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 9px 22px 9px 26px;
+    z-index: 999;
+}
+
+.search-box input[type="text"] {
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    padding-left: 24px;
+    background-image: url(logos/lupa.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    width: 0px;
+    transition: all 1s;
+    color: #696969;
+}
+
+.search-box input:focus{
+    outline: none;
+    width: 300px;
+}
+
+/* Imagen de usuario */
+.user img {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* Cambiar el header al mover el scroll */
+header.abajo{
+    background: #793a3a;
+}

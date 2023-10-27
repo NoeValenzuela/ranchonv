@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;500&family=Oswald&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+.zona1 img{
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.zona1 h1{
+    color: white;
+    font-size: 80px;
+    display: flex;
+    position: absolute;
+    text-transform: uppercase;
+    margin-left: 480px;
+    margin-top: 170px;
+}
+
+.barra{
+    background-color: #793a3a;
+    height: 5px;
+    width: 85%;
+}
+
+/* Productos */
+.product{
+    display: inline-block;
+    margin: 10px 20px;
+    float: none;
+    width: 250px;
+}
+
+/* Imagen del producto */
+.product img{
+    width: 100%;
+    height: auto;
+}
+
+/* al pasar el Puntero del mouse */
+.product :hover{
+    cursor: pointer;
+    transform: rotate(-1deg);
+}
+
+/* Nombre del producto */
+.product h4{
+    font-size: 1em;
+    margin: 10px 0 2px;
+}
+
+.product h4:hover{
+    font-size: 1.1em;
+    color: #b60808;
+}
+
+/* Precio del producto */
+.product h5{
+    color: #b60808;
+    margin-top: 8px;
+}
+
+/* Calificacion en estrellas */
+.rating{
+    color: #ffca28;
+    font-size: 1.4em;
+}
+
+/* Forma de la calificacion */
+.star:before {
+    content: "\2605";
+}
+
+/* Color de estrellas vacias */
+.star:hover ~ .star:before {
+    content: "\2605";
+    color: #ff0000;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
