@@ -12,7 +12,7 @@
             $asunto = 'Formulario Rellenado';
             $mensaje = "Nombre: ".$nombre."<br> Email: $email<br> Telefono: $telefono<br> Mensaje:".$_POST['mensaje'];
             
-            if(mail('tuEmail', $asunto, $mensaje)){
+            if(mail('valenzuela.noe.cb37@gmail.com', $asunto, $mensaje)){
                 echo "Correo enviado";
             }
         ?>
